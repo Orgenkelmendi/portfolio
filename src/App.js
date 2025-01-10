@@ -1,6 +1,7 @@
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faBriefcase, faIdBadge, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -26,6 +27,28 @@ function App() {
             <p><span id='frontend'>Front End</span> Developer.</p>
             <p><span id='tech'>Tech</span> Enthusiast.</p>
             <p><span id='lifetime'>Lifetime</span> Learner.</p>
+      </div>
+      <div id="journey">
+            <div>
+              <h3> <FontAwesomeIcon icon={faBriefcase} /> New York Vein Treatment Center</h3>
+              <p> <FontAwesomeIcon icon={faIdBadge} /> Front-End Developer</p>
+              <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2024 - Present</p>
+            </div>
+            <div>
+              <h3> <FontAwesomeIcon icon={faBriefcase} /> Appstellar</h3>
+              <p> <FontAwesomeIcon icon={faIdBadge} /> Front-End Developer</p>
+              <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2022 - Mar 2024</p>
+            </div>
+            <div>
+              <h3> <FontAwesomeIcon icon={faBriefcase} /> Imbus A.G.</h3>
+              <p> <FontAwesomeIcon icon={faIdBadge} /> Front-End Developer</p>
+              <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2021 - Aug 2022</p>
+            </div>
+            <div>
+              <h3> <FontAwesomeIcon icon={faBriefcase} /> jCoders Academy</h3>
+              <p> <FontAwesomeIcon icon={faIdBadge} /> Front-End Developer</p>
+              <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2018 - Aug 2021</p>
+            </div>
       </div>
     </div>
   );
