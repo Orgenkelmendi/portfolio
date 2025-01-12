@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faXTwitter, faHtml5, faCss3Alt, faJs, faReact, faNode, faDocker, faAws, faGit, faWordpress, faBootstrap, faJira } from '@fortawesome/free-brands-svg-icons';
 import { faBriefcase, faIdBadge, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
@@ -30,25 +30,38 @@ function App() {
       </div>
       <div id="journey">
             <div>
-              <h3> <FontAwesomeIcon icon={faBriefcase} /> New York Vein Treatment Center</h3>
-              <p> <FontAwesomeIcon icon={faIdBadge} /> Front-End Developer</p>
+              <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> New York Vein Treatment Center</h3>
+              <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
               <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2024 - Present</p>
             </div>
             <div>
-              <h3> <FontAwesomeIcon icon={faBriefcase} /> Appstellar</h3>
-              <p> <FontAwesomeIcon icon={faIdBadge} /> Front-End Developer</p>
+              <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> Appstellar</h3>
+              <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
               <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2022 - Mar 2024</p>
             </div>
             <div>
-              <h3> <FontAwesomeIcon icon={faBriefcase} /> Imbus A.G.</h3>
-              <p> <FontAwesomeIcon icon={faIdBadge} /> Front-End Developer</p>
+              <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> Imbus A.G.</h3>
+              <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
               <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2021 - Aug 2022</p>
             </div>
             <div>
-              <h3> <FontAwesomeIcon icon={faBriefcase} /> jCoders Academy</h3>
-              <p> <FontAwesomeIcon icon={faIdBadge} /> Front-End Developer</p>
+              <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> jCoders Academy</h3>
+              <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
               <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2018 - Aug 2021</p>
             </div>
+      </div>
+      <div id='techStack'>
+          <FontAwesomeIcon icon={faHtml5} />
+          <FontAwesomeIcon icon={faCss3Alt} />
+          <FontAwesomeIcon icon={faJs} />
+          <FontAwesomeIcon icon={faReact} />
+          <FontAwesomeIcon icon={faNode} />
+          <FontAwesomeIcon icon={faDocker} />
+          <FontAwesomeIcon icon={faAws} />
+          <FontAwesomeIcon icon={faGit} />
+          <FontAwesomeIcon icon={faWordpress} />
+          <FontAwesomeIcon icon={faBootstrap} />
+          <FontAwesomeIcon icon={faJira} />
       </div>
     </div>
   );
