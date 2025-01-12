@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faXTwitter, faHtml5, faCss3Alt, faJs, faReact, faNode, faDocker, faAws, faGit, faWordpress, faBootstrap, faJira } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faXTwitter, faHtml5, faCss3Alt, faJs, faReact, faNode, faDocker, faAws, faGit, faWordpress, faBootstrap, faJira, faFigma } from '@fortawesome/free-brands-svg-icons';
 import { faBriefcase, faIdBadge, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
         </a>
       </div>
       <header>
-        <a>JOURNEY</a>
-        <a>TECH STACK</a>
+        <a href='#journey'>JOURNEY</a>
+        <a href='#techStack'>TECH STACK</a>
         <a>PROJECTS</a>
         <a>GET IN TOUCH</a>
       </header>
@@ -51,7 +51,7 @@ function App() {
             </div>
       </div>
       <div id='techStack'>
-          <FontAwesomeIcon icon={faHtml5} />
+          {/* <FontAwesomeIcon icon={faHtml5} />
           <FontAwesomeIcon icon={faCss3Alt} />
           <FontAwesomeIcon icon={faJs} />
           <FontAwesomeIcon icon={faReact} />
@@ -61,7 +61,55 @@ function App() {
           <FontAwesomeIcon icon={faGit} />
           <FontAwesomeIcon icon={faWordpress} />
           <FontAwesomeIcon icon={faBootstrap} />
-          <FontAwesomeIcon icon={faJira} />
+          <FontAwesomeIcon icon={faJira} /> */}
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faHtml5} />
+            <span className='iconText'>HTML5</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faCss3Alt} />
+            <span className='iconText'>CSS3</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faJs} />
+            <span className='iconText'>JavaScript</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faReact} />
+            <span className='iconText'>React</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faNode} />
+            <span className='iconText'>Node.js</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faDocker} />
+            <span className='iconText'>Docker</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faAws} />
+            <span className='iconText'>AWS</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faGit} />
+            <span className='iconText'>Git</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faJira} />
+            <span className='iconText'>Jira</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faBootstrap} />
+            <span className='iconText'>Bootstrap</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faFigma} />
+            <span className='iconText'>Figma</span>
+          </div>
+          <div className='iconBox'>
+            <FontAwesomeIcon className='icons' icon={faWordpress} />
+            <span className='iconText'>WordPress</span>
+          </div>
       </div>
     </div>
   );

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #0D0D0D;
   font-family: "Rubik", serif;
@@ -23,6 +26,7 @@ header a {
   position: relative;
   z-index: 1;
   margin: 0px 30px;
+  text-decoration: none;
 }
 
 header a:hover {
@@ -160,14 +164,52 @@ p * {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 30px 100px;
+  padding: 30px 150px;
 }
 
-#techStack * {
-  font-size: 100px;
-  margin: 50px 80px;
+.iconBox {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 50px;
 }
 
+.iconBox .icons {
+  font-size: 30px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.iconBox:hover .icons {
+  transform: translateX(100%);
+}
+
+.iconBox .iconText {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: transform 0.5s ease;
+}
+
+.iconBox:hover .iconText {
+  transform: translateX(100%);
+}
 
 /* Mobile Responsive */
 @media (max-width: 600px) {
