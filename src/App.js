@@ -7,21 +7,21 @@ function App() {
   return (
     <div className="App">
       <div id='socials'>
-        <a href="https://www.linkedin.com/in/orgen-kelmendi" target="_blank">
+        <a href="https://www.linkedin.com/in/orgen-kelmendi" target="_blank" rel="noreferrer">
           <FontAwesomeIcon id='linkedin' icon={faLinkedin} />
         </a>
-        <a href="https://github.com/Orgenkelmendi" target="_blank">
+        <a href="https://github.com/Orgenkelmendi" target="_blank" rel="noreferrer">
           <FontAwesomeIcon id='github' icon={faGithub} />
         </a>
-        <a href="https://x.com/kelmendiorgen" target="_blank">
+        <a href="https://x.com/kelmendiorgen" target="_blank" rel="noreferrer">
           <FontAwesomeIcon id='twitter' icon={faXTwitter} />
         </a>
       </div>
       <header>
         <a href='#journey'>JOURNEY</a>
         <a href='#techStack'>TECH STACK</a>
-        <a>PROJECTS</a>
-        <a>GET IN TOUCH</a>
+        <a href='projects'>PROJECTS</a>
+        <a href='contact'>GET IN TOUCH</a>
       </header>
       <div id='landing'>
             <p><span id='frontend'>Front End</span> Developer.</p>
