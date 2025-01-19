@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #0D0D0D;
   font-family: "Rubik", serif;
@@ -47,6 +48,7 @@ header a::after {
   z-index: -1;
   transition: transform 0.3s;
 }
+
 header a:hover::after {
   transform: scaleY(1);
 }
@@ -55,8 +57,8 @@ header a:hover::after {
   height: 100vh;
   width: 100% !important;
   color: #FFFFFF;
-  font-weight: 300;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,5 +225,22 @@ p * {
     margin-bottom: 15px;
     width: 110px;
     text-align: center;
+  }
+
+  #socials {
+    padding: 0px 10px;
+  }
+
+  #socials a * {
+    font-size: 26px;
+  }
+
+  #landing {
+    margin-left: 5px;
+  }
+  #landing p {
+    font-size: 26px;
+    text-align: center;
+    width: 90%;
   }
 }
