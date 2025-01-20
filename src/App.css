@@ -9,7 +9,7 @@ body {
   font-family: "Rubik", serif;
 }
 
-header {
+header, .menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +18,9 @@ header {
   font-weight: 400;
   position: absolute;
   width: 100%;
+  position: fixed;
+  background-color: rgba(13, 13, 13, 0.8);
+  z-index: 1000;
 }
 
 header a {
@@ -51,6 +54,10 @@ header a::after {
 
 header a:hover::after {
   transform: scaleY(1);
+}
+
+#hamburger {
+  display: none;
 }
 
 #landing {
@@ -110,21 +117,7 @@ header a:hover::after {
 #journey h3 {
   font-size: 20px;
   font-weight: 500;
-  /* position: relative;
-  z-index: 1; */
 }
-
-/* #journey h3::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 31px;
-  right: 0;
-  bottom: 0;
-  background-color: #734F43;
-  z-index: -1;
-  width:38.5%;
-} */
 
 #journey p {
   font-size: 18px;
@@ -217,14 +210,30 @@ p * {
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 16px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.open {
+    display: flex;
   }
 
   header a {
     margin-bottom: 15px;
-    width: 110px;
+    width: 140px;
     text-align: center;
+  }
+
+  #hamburger {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 10px;
+    right: 15px;
   }
 
   #socials {
@@ -242,5 +251,21 @@ p * {
     font-size: 26px;
     text-align: center;
     width: 90%;
+  }
+
+  #journey {
+    padding: 10px 50px;
+  }
+
+  #techStack {
+    padding: 30px 20px;
+  }
+
+  .iconBox {
+    margin: 20px;
+  }
+
+  .iconBox .icons {
+    font-size: 20px !important;
   }
 }

@@ -1,11 +1,17 @@
+import React, { useState } from 'react';
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faXTwitter, faHtml5, faCss3Alt, faJs, faReact, faNode, faDocker, faAws, faGit, faWordpress, faBootstrap, faJira, faFigma } from '@fortawesome/free-brands-svg-icons';
 import { faBriefcase, faIdBadge, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
-// import { TypeAnimation } from 'react-type-animation';
 import { ReactTyped } from "react-typed";
+import { Cross as Hamburger } from 'hamburger-react'
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = (toggled) => {
+    setIsOpen(toggled);
+  };
   return (
     <div className="App">
       <div id='socials'>
@@ -19,16 +25,16 @@ function App() {
           <FontAwesomeIcon id='twitter' icon={faXTwitter} />
         </a>
       </div>
-      <header>
+      <header className={`menu ${isOpen ? 'open' : ''}`}>
         <a href='#journey'>JOURNEY</a>
         <a href='#techStack'>TECH STACK</a>
         <a href='projects'>PROJECTS</a>
         <a href='contact'>GET IN TOUCH</a>
       </header>
+      <div id='hamburger'>
+        <Hamburger toggled={isOpen} toggle={handleToggle} direction='right' size={20} color='white' />
+      </div>
       <div id='landing'>
-        {/* <p><span id='frontend'>Front End</span> Developer.</p>
-        <p><span id='tech'>Tech</span> Enthusiast.</p>
-        <p><span id='lifetime'>Lifetime</span> Learner.</p> */}
         <p>
           <ReactTyped strings={["<span id='frontend'> Front End</span> Developer.", "<span id='tech'>Tech</span> Enthusiast.", "<span id='lifetime'>Lifetime</span> Learner."]} typeSpeed={100} backSpeed={100} cursorChar=">" showCursor="true" loop />
         </p>
@@ -56,17 +62,6 @@ function App() {
         </div>
       </div>
       <div id='techStack'>
-        {/* <FontAwesomeIcon icon={faHtml5} />
-          <FontAwesomeIcon icon={faCss3Alt} />
-          <FontAwesomeIcon icon={faJs} />
-          <FontAwesomeIcon icon={faReact} />
-          <FontAwesomeIcon icon={faNode} />
-          <FontAwesomeIcon icon={faDocker} />
-          <FontAwesomeIcon icon={faAws} />
-          <FontAwesomeIcon icon={faGit} />
-          <FontAwesomeIcon icon={faWordpress} />
-          <FontAwesomeIcon icon={faBootstrap} />
-          <FontAwesomeIcon icon={faJira} /> */}
         <div className='iconBox'>
           <FontAwesomeIcon className='icons' icon={faHtml5} />
           <span className='iconText'>HTML5</span>
