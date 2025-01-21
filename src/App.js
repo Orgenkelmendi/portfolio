@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
+import outdoorKosovaLogo from './images/outdoor_kosova.png';
+import flzsSolutionsLogo from './images/flzs_solutions.png';
+import testbenchLogo from './images/testbench.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faXTwitter, faHtml5, faCss3Alt, faJs, faReact, faNode, faDocker, faAws, faGit, faWordpress, faBootstrap, faJira, faFigma } from '@fortawesome/free-brands-svg-icons';
 import { faBriefcase, faIdBadge, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
@@ -110,6 +113,39 @@ function App() {
           <FontAwesomeIcon className='icons' icon={faWordpress} />
           <span className='iconText'>WordPress</span>
         </div>
+      </div>
+      <div id='projects'>
+          <div className='project'>
+              <h2>Outdoor Kosova</h2>
+              <div className='projectBox'>
+                <img src={outdoorKosovaLogo} alt='Outdoor Kosova'/>
+                <div>
+                  <p>Tour Operator booking website and SEO-optimized. Developed with pure code in HTML, CSS and JavaScript, and deployed in WordPress.  </p>
+                  <a href='https://www.outdoorkosova.com' target='_blank'>TAKE A LOOK</a>
+                </div>
+              </div>
+          </div>
+          <div className='project'>
+              <h2>FLZS Solutions</h2>
+              <div className='projectBox'>
+                <img src={flzsSolutionsLogo} alt='FLZS Solutions'/>
+                <div>
+                  <p>Full-Stack developed website for a Swiss marketing agency. Built with React, Node.js and TailwindCSS.
+                  Git and Jira were used during the development to manage the process.</p>
+                  <a href='https://www.flzssolutions.ch' target='_blank'>TAKE A LOOK</a>
+                </div>
+              </div>
+          </div>
+          <div className='project'>
+              <h2>TestBench</h2>
+              <div className='projectBox'>
+                <img src={testbenchLogo} alt='TestBench'/>
+                <div>
+                  <p>Load Testing Software to help testers, developers, and product owners create and evaluate test sessions. The front-end is built with React to maintain a better UI/UX and ensure high performance with interactive interfaces.</p>
+                  <a href='https://www.imbus.de' target='_blank'>TAKE A LOOK</a>
+                </div>
+              </div>
+          </div>
       </div>
     </div>
   );

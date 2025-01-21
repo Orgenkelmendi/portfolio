@@ -13,7 +13,7 @@ header, .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0px;
+  padding: 20px 0px;
   font-size: 20px;
   font-weight: 400;
   position: absolute;
@@ -154,7 +154,7 @@ p * {
 }
 
 #techStack {
-  max-height: 100vh;
+  min-height: 100vh;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
@@ -206,12 +206,81 @@ p * {
   transform: translateX(100%);
 }
 
+#projects {
+  width: 100%;
+  height: 100vh;
+}
+
+.project {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px;
+  margin: 30px 0px;
+}
+
+.project h2 {
+  font-weight: 500;
+  border-bottom: 5px solid #1B3C59;
+  width: fit-content;
+}
+
+.projectBox{
+  display: flex;
+}
+
+.projectBox div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 40px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.projectBox div a {
+  color: #FFFFFF;
+  border-bottom: 2px solid #BCD97E;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  width: fit-content;
+  font-weight: 400;
+}
+
+.projectBox div a:hover {
+  color: #1B3C59;
+}
+
+.projectBox div a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  background: #BCD97E;
+  z-index: -1;
+  transition: transform 0.3s;
+}
+
+.projectBox div a:hover::after {
+  transform: scaleY(1);
+}
+
+.projectBox img {
+  width: 65%;
+  box-shadow: 10px 10px 0px #1B3C59;
+}
+
 /* Mobile Responsive */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    /* padding: 20px; */
-    font-size: 16px;
+    font-size: 16px; 
   }
 
   .menu {
@@ -263,10 +332,34 @@ p * {
   }
 
   .iconBox {
-    margin: 20px;
+    margin: 30px;
+    width: 80px;
+    height: 80px;
   }
 
-  .iconBox .icons {
-    font-size: 20px !important;
+  .project {
+    padding: 10px 50px;
+    margin: 5px 0px;
+  }
+
+  .project h2 {
+    font-size: 18px;
+  }
+
+  .projectBox {
+    flex-direction: column;
+  }
+
+  .projectBox img {
+    width: 100%;
+  }
+
+  .projectBox div {
+    margin: 20px 0px;
+    font-size: 14px;
+  }
+
+  .iconBox .iconText {
+    font-size: 15px;
   }
 }
