@@ -121,7 +121,7 @@ function App() {
                 <img src={outdoorKosovaLogo} alt='Outdoor Kosova'/>
                 <div>
                   <p>Tour Operator booking website and SEO-optimized. Developed with pure code in HTML, CSS and JavaScript, and deployed in WordPress.  </p>
-                  <a href='https://www.outdoorkosova.com' target='_blank'>TAKE A LOOK</a>
+                  <a href='https://www.outdoorkosova.com' target='_blank' rel="noreferrer">TAKE A LOOK</a>
                 </div>
               </div>
           </div>
@@ -132,7 +132,7 @@ function App() {
                 <div>
                   <p>Full-Stack developed website for a Swiss marketing agency. Built with React, Node.js and TailwindCSS.
                   Git and Jira were used during the development to manage the process.</p>
-                  <a href='https://www.flzssolutions.ch' target='_blank'>TAKE A LOOK</a>
+                  <a href='https://www.flzssolutions.ch' target='_blank' rel="noreferrer">TAKE A LOOK</a>
                 </div>
               </div>
           </div>
@@ -142,7 +142,7 @@ function App() {
                 <img src={testbenchLogo} alt='TestBench'/>
                 <div>
                   <p>Load Testing Software to help testers, developers, and product owners create and evaluate test sessions. The front-end is built with React to maintain a better UI/UX and ensure high performance with interactive interfaces.</p>
-                  <a href='https://www.imbus.de' target='_blank'>TAKE A LOOK</a>
+                  <a href='https://www.imbus.de' target='_blank' rel="noreferrer">TAKE A LOOK</a>
                 </div>
               </div>
           </div>
