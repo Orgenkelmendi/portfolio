@@ -45,7 +45,7 @@ function App() {
       <div id="journey">
         <div>
           <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> NY Vein Treatment Center</h3>
-          <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
+          <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Lead Front-End Developer</p>
           <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2024 - Present</p>
         </div>
         <div>
@@ -60,7 +60,7 @@ function App() {
         </div>
         <div>
           <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> jCoders Academy</h3>
-          <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
+          <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Dev & Trainer</p>
           <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2018 - Aug 2021</p>
         </div>
       </div>
@@ -147,6 +147,18 @@ function App() {
           </div>
         </div>
       </div>
+      <div id='contact'>
+          <h2>Let's Get in Touch</h2>
+          <form>
+            <input required type="text" placeholder="Name" />
+            <input required type="email" placeholder="Email" />
+            <textarea required rows="6" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+      </div>
+      <footer>
+        <p>© 2025 Orgen Kelmendi. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
