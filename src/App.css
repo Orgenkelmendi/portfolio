@@ -111,26 +111,53 @@ header a:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   padding: 10px 150px;
 }
 
 #journey h3 {
   font-size: 20px;
   font-weight: 500;
+  /* background-color: #734F43; */
+  width: 350px;
+  padding: 8px 20px;
+  border-left: 5px solid #734F43;
 }
 
 #journey p {
   font-size: 18px;
   font-weight: 400;
   padding-left: 3px;
+  /* background-color: #1B3C59; */
+  height: fit-content;
+  width: 350px;
+  padding: 8px 20px;
+  border-left: 5px solid #1B3C59;
 }
-
+.calendar {
+  /* background-color: #BCD97E !important; */
+  border-left: 5px solid #BCD97E !important;
+  /* color: #0D0D0D; */
+}
 #journey div {
   display: flex;
   flex-direction: column;
   height: 22vh;
-  margin: 1vh 0;
-  justify-content: space-around;
+  margin: 1px 0;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.briefcaseIcon {
+  color: #734F43;
+}
+
+.idIcon {
+  color: #1B3C59;
+}
+
+.calendarIcon {
+  color: #BCD97E;
 }
 
 #journey div * {
@@ -143,14 +170,6 @@ h3 * {
 
 p * {
   margin-right: 5px;
-}
-
-.briefcaseIcon {
-  color: #734F43;
-}
-
-.idIcon {
-  color: #BCD97E;
 }
 
 #techStack {
@@ -324,7 +343,17 @@ p * {
   }
 
   #journey {
-    padding: 10px 50px;
+    padding: 10px 55px;
+  }
+
+  #journey div h3 {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  #journey div p {
+    width: 100%;
+    font-size: 18px;
   }
 
   #techStack {

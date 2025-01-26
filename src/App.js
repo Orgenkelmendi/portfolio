@@ -31,8 +31,8 @@ function App() {
       <header className={`menu ${isOpen ? 'open' : ''}`}>
         <a href='#journey'>JOURNEY</a>
         <a href='#techStack'>TECH STACK</a>
-        <a href='projects'>PROJECTS</a>
-        <a href='contact'>GET IN TOUCH</a>
+        <a href='#projects'>PROJECTS</a>
+        <a href='#contact'>GET IN TOUCH</a>
       </header>
       <div id='hamburger'>
         <Hamburger toggled={isOpen} toggle={handleToggle} direction='right' size={20} color='white' />
@@ -44,24 +44,24 @@ function App() {
       </div>
       <div id="journey">
         <div>
-          <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> New York Vein Treatment Center</h3>
+          <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> NY Vein Treatment Center</h3>
           <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
-          <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2024 - Present</p>
+          <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2024 - Present</p>
         </div>
         <div>
           <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> Appstellar</h3>
           <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
-          <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2022 - Mar 2024</p>
+          <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2022 - Mar 2024</p>
         </div>
         <div>
           <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> Imbus A.G.</h3>
           <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
-          <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2021 - Aug 2022</p>
+          <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2021 - Aug 2022</p>
         </div>
         <div>
           <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> jCoders Academy</h3>
           <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
-          <p> <FontAwesomeIcon icon={faCalendarDays} /> Sep 2018 - Aug 2021</p>
+          <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2018 - Aug 2021</p>
         </div>
       </div>
       <div id='techStack'>
@@ -115,37 +115,37 @@ function App() {
         </div>
       </div>
       <div id='projects'>
-          <div className='project'>
-              <h2>Outdoor Kosova</h2>
-              <div className='projectBox'>
-                <img src={outdoorKosovaLogo} alt='Outdoor Kosova'/>
-                <div>
-                  <p>Tour Operator booking website and SEO-optimized. Developed with pure code in HTML, CSS and JavaScript, and deployed in WordPress.  </p>
-                  <a href='https://www.outdoorkosova.com' target='_blank' rel="noreferrer">TAKE A LOOK</a>
-                </div>
-              </div>
+        <div className='project'>
+          <h2>Outdoor Kosova</h2>
+          <div className='projectBox'>
+            <img src={outdoorKosovaLogo} alt='Outdoor Kosova' />
+            <div>
+              <p>Tour Operator booking website and SEO-optimized. Developed with pure code in HTML, CSS and JavaScript, and deployed in WordPress.  </p>
+              <a href='https://www.outdoorkosova.com' target='_blank' rel="noreferrer">TAKE A LOOK</a>
+            </div>
           </div>
-          <div className='project'>
-              <h2>FLZS Solutions</h2>
-              <div className='projectBox'>
-                <img src={flzsSolutionsLogo} alt='FLZS Solutions'/>
-                <div>
-                  <p>Full-Stack developed website for a Swiss marketing agency. Built with React, Node.js and TailwindCSS.
-                  Git and Jira were used during the development to manage the process.</p>
-                  <a href='https://www.flzssolutions.ch' target='_blank' rel="noreferrer">TAKE A LOOK</a>
-                </div>
-              </div>
+        </div>
+        <div className='project'>
+          <h2>FLZS Solutions</h2>
+          <div className='projectBox'>
+            <img src={flzsSolutionsLogo} alt='FLZS Solutions' />
+            <div>
+              <p>Full-Stack developed website for a Swiss marketing agency. Built with React, Node.js and TailwindCSS.
+                Git and Jira were used during the development to manage the process.</p>
+              <a href='https://www.flzssolutions.ch' target='_blank' rel="noreferrer">TAKE A LOOK</a>
+            </div>
           </div>
-          <div className='project'>
-              <h2>TestBench</h2>
-              <div className='projectBox'>
-                <img src={testbenchLogo} alt='TestBench'/>
-                <div>
-                  <p>Load Testing Software to help testers, developers, and product owners create and evaluate test sessions. The front-end is built with React to maintain a better UI/UX and ensure high performance with interactive interfaces.</p>
-                  <a href='https://www.imbus.de' target='_blank' rel="noreferrer">TAKE A LOOK</a>
-                </div>
-              </div>
+        </div>
+        <div className='project'>
+          <h2>TestBench</h2>
+          <div className='projectBox'>
+            <img src={testbenchLogo} alt='TestBench' />
+            <div>
+              <p>Load Testing Software to help testers, developers, and product owners create and evaluate test sessions. The front-end is built with React to maintain a better UI/UX and ensure high performance with interactive interfaces.</p>
+              <a href='https://www.imbus.de' target='_blank' rel="noreferrer">TAKE A LOOK</a>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   );
