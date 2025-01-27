@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from "@emailjs/browser";
 import './App.css';
 import outdoorKosovaLogo from './images/outdoor_kosova.png';
 import flzsSolutionsLogo from './images/flzs_solutions.png';
@@ -11,10 +12,39 @@ import { Cross as Hamburger } from 'hamburger-react'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [result, setResult] = useState("")
+  const form = useRef();
 
   const handleToggle = (toggled) => {
     setIsOpen(toggled);
   };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_uzl9i0m",
+        "template_axh8pye",
+        form.current,
+        "nOlLJyYlfLVsL3q9h"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          // alert("Email sent successfully!");
+          setResult("Email sent. Thank you.")
+        },
+        (error) => {
+          console.log("Failed to send email:", error.text);
+          // alert("Failed to send email. Please try again.");
+          setResult('Failed to send. Please try again.')
+        }
+      );
+
+    e.target.reset();
+  };
+  
   return (
     <div className="App">
       <div id='socials'>
@@ -149,12 +179,13 @@ function App() {
       </div>
       <div id='contact'>
           <h2>Let's Get in Touch</h2>
-          <form>
-            <input required type="text" placeholder="Name" />
-            <input required type="email" placeholder="Email" />
-            <textarea required rows="6" placeholder="Message"></textarea>
+          <form ref={form} onSubmit={sendEmail}>
+            <input required type="text" placeholder="Name" name="form_name"/>
+            <input required type="email" placeholder="Email" name="form_email"/>
+            <textarea required rows="6" placeholder="Message" name="message"></textarea>
             <button type="submit">Send</button>
           </form>
+          <p id='result'>{result}</p>
       </div>
       <footer>
         <p>© 2025 Orgen Kelmendi. All rights reserved.</p>

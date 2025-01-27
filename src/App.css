@@ -312,6 +312,13 @@ p * {
   margin-bottom: 50px;
 }
 
+#contact p {
+  color: #FFFFFF;
+  margin-top: 20px;
+  width: 90%;
+  text-align: center;
+}
+
 #contact form {
   display: flex;
   flex-direction: column;
@@ -354,6 +361,7 @@ p * {
   max-width: 70%;
   min-width: 70%;
   min-height: 13vh;
+  font-family: "Rubik", serif !important;
 }
 
 footer {
@@ -461,11 +469,19 @@ footer {
   }
 
   #contact form {
-    width: 80%;
+    width: 90%;
+  }
+
+  #contact form * {
+    padding: 12px;
   }
 
   #contact h2 {
     font-size: 24px;
+  }
+
+  #contact form button {
+    width: 77%; 
   }
 
   footer {
