@@ -150,7 +150,7 @@ function App() {
           <div className='projectBox'>
             <img src={outdoorKosovaLogo} alt='Outdoor Kosova' />
             <div>
-              <p>Tour Operator booking website and SEO-optimized. Developed with pure code in HTML, CSS and JavaScript, and deployed in WordPress.  </p>
+              <p>User-friendly, SEO-optimized booking website for a Top-Balkan Tour Operator. Started from scratch with HTML, CSS, and JavaScript, and brought it to life on WordPress for a smooth and seamless experience. </p>
               <a href='https://www.outdoorkosova.com' target='_blank' rel="noreferrer">TAKE A LOOK</a>
             </div>
           </div>
@@ -160,8 +160,7 @@ function App() {
           <div className='projectBox'>
             <img src={flzsSolutionsLogo} alt='FLZS Solutions' />
             <div>
-              <p>Full-Stack developed website for a Swiss marketing agency. Built with React, Node.js and TailwindCSS.
-                Git and Jira were used during the development to manage the process.</p>
+              <p>Full-stack website for a Swiss marketing agency, combining React, Node.js, and TailwindCSS for a modern and responsive design. Collaborated efficiently using Git for version control and Jira to keep the development process organized and on track.</p>
               <a href='https://www.flzssolutions.ch' target='_blank' rel="noreferrer">TAKE A LOOK</a>
             </div>
           </div>
@@ -171,7 +170,7 @@ function App() {
           <div className='projectBox'>
             <img src={testbenchLogo} alt='TestBench' />
             <div>
-              <p>Load Testing Software to help testers, developers, and product owners create and evaluate test sessions. The front-end is built with React to maintain a better UI/UX and ensure high performance with interactive interfaces.</p>
+              <p>Load Testing Software designed to empower testers, developers, and product owners in creating and evaluating test sessions. The front-end, built with React, delivers a high-performance, interactive, and user-friendly interface for an enhanced UI/UX experience.</p>
               <a href='https://www.imbus.de' target='_blank' rel="noreferrer">TAKE A LOOK</a>
             </div>
           </div>
