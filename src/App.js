@@ -88,6 +88,7 @@ function App() {
           {/* Item 1 */}
           <TimelineItem>
             <TimelineOppositeContent
+              id='firstTimeline'
               sx={{ m: 'auto 0', fontFamily: 'Rubik, sans-serif' }}
               align="right"
               variant="body2"
@@ -165,6 +166,7 @@ function App() {
           {/* Item 4 */}
           <TimelineItem>
             <TimelineOppositeContent
+              id='lastTimeline'
               sx={{ m: 'auto 0', fontFamily: 'Rubik, sans-serif' }}
               align="right"
               variant="body2"
