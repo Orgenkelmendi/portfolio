@@ -6,7 +6,6 @@ import flzsSolutionsLogo from './images/flzs_solutions.png';
 import testbenchLogo from './images/testbench.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faXTwitter, faHtml5, faCss3Alt, faJs, faReact, faNode, faDocker, faAws, faGit, faWordpress, faBootstrap, faJira, faFigma } from '@fortawesome/free-brands-svg-icons';
-import { faBriefcase, faIdBadge, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import { ReactTyped } from "react-typed";
 import { Cross as Hamburger } from 'hamburger-react'
 // react-timeline
@@ -18,7 +17,6 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import WorkIcon from '@mui/icons-material/Work';
-import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
 
 
