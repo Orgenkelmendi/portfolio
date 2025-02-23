@@ -9,6 +9,18 @@ import { faLinkedin, faGithub, faXTwitter, faHtml5, faCss3Alt, faJs, faReact, fa
 import { faBriefcase, faIdBadge, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import { ReactTyped } from "react-typed";
 import { Cross as Hamburger } from 'hamburger-react'
+// react-timeline
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
+import Typography from '@mui/material/Typography';
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +56,7 @@ function App() {
 
     e.target.reset();
   };
-  
+
   return (
     <div className="App">
       <div id='socials'>
@@ -72,27 +84,113 @@ function App() {
           <ReactTyped strings={["<span id='frontend'> Front End</span> Developer.", "<span id='tech'>Tech</span> Enthusiast.", "<span id='lifetime'>Lifetime</span> Learner."]} typeSpeed={100} backSpeed={100} cursorChar=">" showCursor="true" loop />
         </p>
       </div>
-      <div id="journey">
-        <div>
-          <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> NY Vein Treatment Center</h3>
-          <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Lead Front-End Developer</p>
-          <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2024 - Present</p>
-        </div>
-        <div>
-          <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> Appstellar</h3>
-          <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
-          <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2022 - Mar 2024</p>
-        </div>
-        <div>
-          <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> Imbus A.G.</h3>
-          <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Developer</p>
-          <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2021 - Aug 2022</p>
-        </div>
-        <div>
-          <h3> <FontAwesomeIcon className='briefcaseIcon' icon={faBriefcase} /> jCoders Academy</h3>
-          <p> <FontAwesomeIcon className='idIcon' icon={faIdBadge} /> Front-End Dev & Trainer</p>
-          <p className='calendar'> <FontAwesomeIcon className='calendarIcon' icon={faCalendarDays} /> Sep 2018 - Aug 2021</p>
-        </div>
+      <div id='timeline'>
+        {/* Timeline */}
+        <Timeline position="left">
+          {/* Item 1 */}
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: 'auto 0', fontFamily: 'Rubik, sans-serif' }}
+              align="right"
+              variant="body2"
+              color="white"
+            >
+              September 2024 - Present
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot style={{ backgroundColor: '#BCD97E' }}>
+                <WorkIcon style={{ color: 'black' }} />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography sx={{ fontFamily: 'Rubik, sans-serif' }} variant="h6" component="span" style={{ color: 'white' }}>
+                NY Vein Center
+              </Typography>
+              <Typography sx={{ fontFamily: 'Rubik, sans-serif' }} style={{ color: 'white' }}>
+                Lead Front End Developer
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          {/* Item 2 */}
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: 'auto 0', fontFamily: 'Rubik, sans-serif' }}
+              align="right"
+              variant="body2"
+              color="white"
+            >
+              July 2022 - March 2024
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot style={{ backgroundColor: '#BCD97E' }}>
+                <WorkIcon style={{ color: 'black' }} />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography sx={{ fontFamily: 'Rubik, sans-serif' }} variant="h6" component="span" style={{ color: 'white' }}>
+                Appstellar
+              </Typography>
+              <Typography sx={{ fontFamily: 'Rubik, sans-serif' }} style={{ color: 'white' }}>
+                Front End Developer
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          {/* Item 3 */}
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: 'auto 0', fontFamily: 'Rubik, sans-serif' }}
+              align="right"
+              variant="body2"
+              color="white"
+            >
+              September 2021 - June 2022
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot style={{ backgroundColor: '#BCD97E' }}>
+                <WorkIcon style={{ color: 'black' }} />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography sx={{ fontFamily: 'Rubik, sans-serif' }} variant="h6" component="span" style={{ color: 'white' }}>
+                Imbus A.G.
+              </Typography>
+              <Typography sx={{ fontFamily: 'Rubik, sans-serif' }} style={{ color: 'white' }}>
+                Front End Developer
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          {/* Item 4 */}
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: 'auto 0', fontFamily: 'Rubik, sans-serif' }}
+              align="right"
+              variant="body2"
+              color="white"
+            >
+              September 2018 - July 2021
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot style={{ backgroundColor: '#BCD97E' }}>
+                <WorkIcon style={{ color: 'black' }} />
+              </TimelineDot>
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <Typography sx={{ fontFamily: 'Rubik, sans-serif' }} variant="h6" component="span" style={{ color: 'white' }}>
+                jCoders
+              </Typography>
+              <Typography sx={{ fontFamily: 'Rubik, sans-serif' }} style={{ color: 'white' }}>
+                Front End Developer
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          {/* Timeline Bottom */}
+        </Timeline>
       </div>
       <div id='techStack'>
         <div className='iconBox'>
@@ -177,14 +275,14 @@ function App() {
         </div>
       </div>
       <div id='contact'>
-          <h2>Let's Get in Touch</h2>
-          <form ref={form} onSubmit={sendEmail}>
-            <input required type="text" placeholder="Name" name="form_name"/>
-            <input required type="email" placeholder="Email" name="form_email"/>
-            <textarea required rows="6" placeholder="Message" name="message"></textarea>
-            <button type="submit">Send</button>
-          </form>
-          <p id='result'>{result}</p>
+        <h2>Let's Get in Touch</h2>
+        <form ref={form} onSubmit={sendEmail}>
+          <input required type="text" placeholder="Name" name="form_name" />
+          <input required type="email" placeholder="Email" name="form_email" />
+          <textarea required rows="6" placeholder="Message" name="message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p id='result'>{result}</p>
       </div>
       <footer>
         <p>© 2025 Orgen Kelmendi. All rights reserved.</p>

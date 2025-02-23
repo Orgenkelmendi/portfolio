@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: #0D0D0D;
-  font-family: "Rubik", serif;
+  font-family: "Rubik", serif !important;
 }
 
 header, .menu {
@@ -170,6 +170,15 @@ h3 * {
 
 p * {
   margin-right: 5px;
+}
+
+/* Timeline */
+#timeline {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #techStack {
